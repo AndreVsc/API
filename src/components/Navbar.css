@@ -1,0 +1,13 @@
+.Navbar-conatainer{
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+    background-color: #213547;
+    width: 100%;
+}
+
+.Navbar-conatainer ul{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}

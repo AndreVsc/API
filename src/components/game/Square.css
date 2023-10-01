@@ -1,0 +1,16 @@
+.square{
+    background-color: #1a2e39;
+    border-radius: 11px;
+    border:1px solid transparent;
+    min-width: 100px;
+    min-height: 100px;
+    font-size: 20px;
+    font-weight:bolder;
+    box-shadow: 1px 1px 0px 2px #03060770;
+    color: aliceblue;
+}
+
+.image{
+    width:40px ;
+    height:40px;
+}

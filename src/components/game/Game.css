@@ -1,0 +1,8 @@
+.bnt{
+    border: 1px solid transparent;
+    background-color: #1a2e39;
+    padding: 15px;
+    border-radius: 11px;
+    color: #ffffff;
+    box-shadow: 1px 1px 0px 2px #03060770;
+}

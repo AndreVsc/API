@@ -1,0 +1,13 @@
+.container-error{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: aliceblue;
+    color: black;
+}
+
+.error-page{
+    size: 2rem;
+}

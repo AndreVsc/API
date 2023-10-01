@@ -1,0 +1,13 @@
+.board-row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    margin: 2px;
+}
+
+.status{
+    margin-bottom: 50px;
+}
+
