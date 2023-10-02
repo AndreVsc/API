@@ -4,8 +4,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: aliceblue;
-    color: black;
+    background-color: #0f1b21;
+    color: rgb(248, 247, 247);
 }
 
 .error-page{

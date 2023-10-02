@@ -18,7 +18,7 @@ const router = createBrowserRouter([
         element: <Tictoctoe />
       },
       {
-        path:"/contact",
+        path:"/api",
         element: <Posts/>
       }
     ],

@@ -5,8 +5,8 @@ export default function Navbar() {
   return (
     <nav className='Navbar-conatainer'>
         <ul>
-            <li><Link to="/">Game</Link></li>
-            <li><Link to="/contact">Posts</Link></li>
+            <li><Link to="/">GAME</Link></li>
+            <li><Link to="/api">API</Link></li>
         </ul>
     </nav>
   )
