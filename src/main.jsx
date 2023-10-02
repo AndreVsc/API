@@ -7,6 +7,7 @@ import ErrorPage from './components/error/ErrorPage.jsx';
 // Páginas
 import Tictoctoe from './routes/Tictoctoe.jsx';
 import Posts from './routes/Posts.jsx';
+import Api from './routes/Api.jsx';
 
 const router = createBrowserRouter([
   {
@@ -19,7 +20,11 @@ const router = createBrowserRouter([
       },
       {
         path:"/api",
-        element: <Posts/>
+        element: <Posts/>,
+      },
+      {
+        path:"/posts/:id",
+        element:<Api/>
       }
     ],
    }

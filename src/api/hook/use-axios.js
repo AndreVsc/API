@@ -1,31 +1,25 @@
 import axios from "axios";
-import { config } from "localforage";
 import { useState, useEffect } from "react";
 
-export default function useAxios(configRequest){
-    
-    const {axiosInstance,method,url,config = {}} = configRequest
+export default function useAxios({ axiosInstance, method, url, othersConfig = {} }) {
+    const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState('');
 
-    const [data,setData]= useState([]);
-    const [loading,setLoading]= useState(true);
-    const [error,setError]= useState('');
-
-
-    useEffect(()=> {
+    useEffect(() => {
         const fetchData = async () => {
             try {
-                const res = await axiosInstance[method.toLowerCase()](url,{...config})
-                setData(res.data)
+                const res = await axiosInstance[method.toLowerCase()](url, { ...othersConfig });
+                setData(res.data);
             } catch (err) {
-                console.log(err.message)
+                setError(err.message);
             } finally {
-                setLoading(false)
+                setLoading(false);
             }
         }
-        fetchData()  
-        }, [])
 
-    return [data,loading,error];
+        fetchData();
+    }, []);
+
+    return [data, loading, error];
 }
-
-
